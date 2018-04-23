@@ -8,3 +8,12 @@ $theme-colors: (
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Custom code/partials
+body{
+  background-color: #81c784 ;
+  color: #000;
+  min-width: 440px;
+}
+header{
+  color: #fff;
+  background-color: #59698d;
+}
