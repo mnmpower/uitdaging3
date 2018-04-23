@@ -17,3 +17,14 @@ header{
   color: #fff;
   background-color: #59698d;
 }
+
+.belangrijketittel{
+  font-family: 'Rochester', cursive !important;
+}
+
+@media screen and (max-width: 600px){
+  img{
+    display: none !important;
+  }
+
+}
