@@ -3,33 +3,96 @@ $theme-colors: (
         'primary': #009CAB,
         'danger': #F04C25
 );
-
+$achtergrondkleur: #81c784;
+$headerkleur: #929fba; // #59698d;
+$navbarkleur: #fafafa ;
 // Link to BS4
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Custom code/partials
-body{
-  background-color: #81c784 ;
+body {
+  background-color: #81c784;
   color: #000;
-  min-width: 530px;
+  // min-width: 530px;
   font-family: 'Raleway', sans-serif;
+  text-align: justify;
 }
-header{
+
+header {
   color: #fff;
-  background-color: #59698d;
+  background-color: $headerkleur;
   font-family: 'Cinzel', serif;
+  margin-top: 55px;
+  h1 {
+    font-size: 2.8em;
+  }
+  h2 {
+    display: none;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
 }
 
-.belangrijketittel{
+img {
+  display: none !important;
+}
+
+.show-image {
+  display: block;
+}
+
+.belangrijketittel {
   font-family: 'Rochester', cursive !important;
+  padding-top: 20px;
+}
+.achtergrondkleur{
+  background-color: $achtergrondkleur;
+  color: #000;
+}
+.headerkleur{
+  background-color: $headerkleur;
+  color: #fff;
+}
+nav{
+  //background-color: #e3f2fd;
+  background-color: $navbarkleur;
+  color: #000;
+}
+@media screen and (min-width: 576px) {
+  body {
+    text-align: left;
+  }
+  img {
+    display: block !important;
+  }
+  header {
+    h1 {
+      font-size: 4.5rem;
+      font-weight: 300;
+      line-height: 1.2;
+    }
+    h2 {
+      display: block;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1em;
+
+    }
+    h3 {
+      font-size: 2.3rem;
+    }
+    img {
+      display: none !important;
+    }
+  }
 }
 
-@media screen and (max-width: 576px){
-  body{
-    text-align: justify;
-  }
-  img{
-    display: none !important;
-  }
+@media screen and (min-width: 992px) {
+  header {
+    img {
+      display: block !important;
+    }
 
+  }
 }
