@@ -11,18 +11,23 @@ $theme-colors: (
 body{
   background-color: #81c784 ;
   color: #000;
-  min-width: 440px;
+  min-width: 530px;
+  font-family: 'Raleway', sans-serif;
 }
 header{
   color: #fff;
   background-color: #59698d;
+  font-family: 'Cinzel', serif;
 }
 
 .belangrijketittel{
   font-family: 'Rochester', cursive !important;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 576px){
+  body{
+    text-align: justify;
+  }
   img{
     display: none !important;
   }
