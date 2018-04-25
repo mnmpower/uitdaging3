@@ -1,0 +1,32 @@
+@import "variables";
+footer a {
+  color: #000;
+}
+footer{
+  background-color: $headerkleur;
+  color: #000;
+  a{
+    &:hover{
+      color: #000;
+      text-decoration: none;
+    }
+    &:visited{
+      color: #000;
+      text-decoration: none;
+    }
+    &:hover{
+      color: #000;
+      text-decoration: none;
+    }
+    &:active{
+      color: #000;
+      text-decoration: none;
+    }
+
+  }
+
+  hr{
+    width: 60px;
+
+  }
+}

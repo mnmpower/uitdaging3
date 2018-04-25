@@ -1,0 +1,70 @@
+@import "variables";
+header {
+  color: #fff;
+  background-color: $headerkleur;
+  font-family: 'Cinzel', serif;
+  margin-top: 55px;
+  h1 {
+    font-size: 2.8em;
+  }
+  h2 {
+    display: none;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  a{
+    color: #fff;
+    &:hover{
+      color: #fff;
+      text-decoration: none;
+    }
+    &:visited{
+      color: #fff;
+      text-decoration: none;
+    }
+    &:hover{
+      color: #fff;
+      text-decoration: none;
+    }
+    &:active{
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+.headerkleur{
+  background-color: $headerkleur;
+  color: #fff;
+}
+@media screen and (min-width: 576px) {
+  header {
+    h1 {
+      font-size: 4.5rem;
+      font-weight: 300;
+      line-height: 1.2;
+    }
+    h2 {
+      display: block;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1em;
+
+    }
+    h3 {
+      font-size: 2.3rem;
+    }
+    img {
+      display: none !important;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header {
+    img {
+      display: block !important;
+    }
+
+  }
+}
