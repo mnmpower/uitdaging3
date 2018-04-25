@@ -113,12 +113,19 @@ nav{
 .niet-op-klein{
   display: none;
 }
+
 .round{
   border-radius: 85px;
   background-color: #fff;
   color: #000;
   border: 3px solid #000;
 }
+
+.logoplaats{
+  position: absolute;
+  margin-left: 10vw;
+}
+
 @media screen and (min-width: 576px) {
   body {
     text-align: left;
