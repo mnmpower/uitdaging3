@@ -113,6 +113,12 @@ nav{
 .niet-op-klein{
   display: none;
 }
+
+.logoplaats{
+  position: absolute;
+  margin-left: 10vw;
+}
+
 @media screen and (min-width: 576px) {
   body {
     text-align: left;
