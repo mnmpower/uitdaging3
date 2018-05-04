@@ -32,6 +32,10 @@ nav{
   color: #000;
   border: 3px solid #000;
 }
+#huidigePagina{
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
 @media screen and (min-width: 576px) {
   body {
@@ -43,6 +47,23 @@ nav{
 
   .niet-op-klein{
     display: block;
+  }
+
+  div{
+    section{
+      background-color: #e5e5e5;
+      color: #000;
+      border-right: $basisafstand solid $achtergrondkleur;
+      border-left: $basisafstand solid $achtergrondkleur;
+      padding: 2*$basisafstand;
+      margin-top: $basisafstand;
+      margin-bottom: $basisafstand;
+    }
+    article{
+      p{
+        padding: $basisafstand;
+      }
+    }
   }
 }
 
