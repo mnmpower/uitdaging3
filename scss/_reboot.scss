@@ -1,19 +1,70 @@
+// Custom mixins
+@mixin kleuren($vulkleur, $kleur) {
+  background-color: $vulkleur;
+  color: $kleur;
+}
+
 body {
-  background-color: #81c784;
-  color: #000;
+  @include kleuren(#81c784, #000);
   min-width: 300px;
   font-family: 'Raleway', sans-serif;
   text-align: justify;
 }
 
-.belangrijketittel {
-  font-family: 'Rochester', cursive !important;
-  padding-top: 20px;
+nav{
+  //background-color: #e3f2fd;
+  @include kleuren($navbarkleur, #000);
 }
 
-article h2:first-child {
-  font-size: xx-large;
-  margin: 30px auto;
+h3{
   text-align: center;
+}
+
+img {
+  //display: none !important;
+}
+
+article {
+  h2 {
+    &:first-child {
+      font-size: xx-large;
+      margin: 30px auto;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (min-width: 576px) {
+  img {
+    //display: block !important;
+  }
+
+  h3{
+    text-align: left;
+  }
+  header{
+    h3{
+      text-align: center;
+    }
+  }
+
+  div{
+    section{
+      @include kleuren(#e5e5e5, #000);
+      border-right: $basisafstand solid $achtergrondkleur;
+      border-left: $basisafstand solid $achtergrondkleur;
+      padding: 2*$basisafstand;
+      margin: $basisafstand auto;
+    }
+    article{
+      p{
+        padding: $basisafstand;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+
 }
 
