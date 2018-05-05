@@ -16,6 +16,10 @@
 .niet-op-klein{
   display: none;
 }
+.minderMargeKleinScherm {
+  margin-top: 0 !important;
+  margin-bottom: 10px !important;
+}
 
 .round{
   border-radius: 85px;
@@ -36,6 +40,10 @@
 @media screen and (min-width: 576px) {
   .niet-op-klein{
     display: block;
+  }
+  .minderMargeKleinScherm {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
   }
 }
 
