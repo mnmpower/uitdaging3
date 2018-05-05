@@ -9,8 +9,13 @@
 @import "footer";
 @import "header";
 
+body {
+  text-align: justify;
+}
+
 img {
-  display: none !important;
+  //display: none !important;
+
 }
 
 .show-image {
@@ -36,18 +41,29 @@ nav{
   text-transform: uppercase;
   font-weight: bold;
 }
+h3{
+  text-align: center;
+}
 
 @media screen and (min-width: 576px) {
-  body {
+
+  img {
+    //display: block !important;
+  }
+  
+  h3{
     text-align: left;
   }
-  img {
-    display: block !important;
+  header{
+    h3{
+      text-align: center;
+    }
   }
 
   .niet-op-klein{
     display: block;
   }
+
 
   div{
     section{
