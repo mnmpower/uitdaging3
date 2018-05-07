@@ -1,0 +1,21 @@
+@import "variables";
+@keyframes verkleuren {
+  0% {
+    background-color: $headerkleur;
+  }
+  25% {
+    background-color: darken(#d5d5d5,10%);
+  }
+
+  50% {
+    background-color: hotpink;
+  }
+  75% {
+    background-color: $achtergrondkleur;
+  }
+
+  100% {
+    background-color: blue;
+  }
+}
+
