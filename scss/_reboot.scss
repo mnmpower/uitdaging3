@@ -50,7 +50,7 @@ article {
 
   div{
     section{
-      @include kleuren(#e5e5e5, #000);
+      @include kleuren( lighten(#d5d5d5,10%), #000);
       border-right: $basisafstand solid $achtergrondkleur;
       border-left: $basisafstand solid $achtergrondkleur;
       padding: 2*$basisafstand;
