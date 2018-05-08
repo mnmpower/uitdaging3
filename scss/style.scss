@@ -12,6 +12,10 @@
 @import "transition";
 @import "animation";
 
+.hide {
+  display: none;
+}
+
 .show-image {
   display: block;
 }
