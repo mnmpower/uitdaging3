@@ -47,11 +47,7 @@ article {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    section{
-      div{
-        @include kleuren($navbarkleur, black)
-      }
-    }
+    
   }
 
 
@@ -67,8 +63,8 @@ article {
   div{
     section{
       @include kleuren( lighten(#d5d5d5,10%), #000);
-      border-right: $basisafstand solid $achtergrondkleur;
-      border-left: $basisafstand solid $achtergrondkleur;
+      border-right: $basisafstand solid $navbarkleur;
+      border-left: $basisafstand solid $navbarkleur;
       padding: 2*$basisafstand;
       margin: $basisafstand auto;
     }
