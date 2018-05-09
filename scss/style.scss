@@ -46,7 +46,9 @@
   @include kleuren(#fff, #000);
   border: 3px solid #000;
 }
-
+//.lang{
+//  width: auto !important;
+//}
 #huidigePagina{
   text-transform: uppercase;
   font-weight: bold;

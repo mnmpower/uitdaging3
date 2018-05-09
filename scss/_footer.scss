@@ -27,7 +27,12 @@ footer{
   }
 
   hr{
-    width: 60px;
-
+    width: auto;
   }
+
+  h4+hr{
+    width: 60px;
+  }
+
+
 }
