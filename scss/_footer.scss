@@ -3,7 +3,8 @@ footer a {
   color: #000;
 }
 footer{
-  background-color: $headerkleur;
+  //background-color: $headerkleur;
+  background:rgba($headerkleur, 0.85);
   color: #000;
   a{
     &:hover{
