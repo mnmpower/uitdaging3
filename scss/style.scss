@@ -15,7 +15,14 @@
 .hide {
   display: none;
 }
+.plaatsing{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1;
+  color: #fff;
 
+}
 .show-image {
   display: block;
 }
