@@ -69,6 +69,18 @@
     //@include kleuren($navbarkleur, black)
     background:rgba(129, 199, 132, 0.8);
   }
+  .gif{
+    animation-name: MuziekIntervallen;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background-repeat: no-repeat;
+    width: 111px;
+    min-width: 111px;
+    height: 80px;
+
+  }
 }
 
 @media screen and (min-width: 992px) {

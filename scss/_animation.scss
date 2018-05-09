@@ -1,21 +1,28 @@
 @import "variables";
-@keyframes verkleuren {
-  0% {
-    background-color: $headerkleur;
-  }
-  25% {
-    background-color: darken(#d5d5d5,10%);
-  }
 
-  50% {
-    background-color: hotpink;
+@keyframes MuziekIntervallen {
+  0%{
+    background-image: url(../images/prime.jpg);
   }
-  75% {
-    background-color: $achtergrondkleur;
+  14%{
+    background-image: url(../images/secunde.jpg);
   }
-
-  100% {
-    background-color: blue;
+  28%{
+    background-image: url(../images/terts.jpg);
+  }
+  42%{
+    background-image: url(../images/kwart.jpg);
+  }
+  57%{
+    background-image: url(../images/kwint.jpg);
+  }
+  71%{
+    background-image: url(../images/sext.jpg);
+  }
+  85%{
+    background-image: url(../images/septiem.jpg);
+  }
+  100%{
+    background-image: url(../images/octaaf.jpg);
   }
 }
-

@@ -76,12 +76,3 @@ header {
 
   }
 }
-@media screen and (max-width: 575px ){
-  header{
-    animation-name: verkleuren;
-    animation-duration: 20s;
-    animation-play-state: running;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-  }
-}
