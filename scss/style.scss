@@ -30,6 +30,9 @@
   margin-top: 0 !important;
   margin-bottom: 10px !important;
 }
+.verbergen{
+  @include text-hide()
+}
 
 .round{
   border-radius: 85px;
