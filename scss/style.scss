@@ -59,6 +59,10 @@
   padding-top: 20px;
 }
 
+.bewegendemuziek {
+  display: none;
+}
+
 @media screen and (min-width: 576px) {
   .niet-op-klein{
     display: block;
@@ -81,7 +85,39 @@
     width: 111px;
     min-width: 111px;
     height: 80px;
+  }
+  .clickable:hover{
+    transform: scale(1.1);
+  }
+  .transition-ready{
+    transition: font-size 1s ease, font-weight 1s linear, color 1.5s ease;
 
+    &:hover{
+      font-size: 60px;
+      font-weight: bolder;
+      color: $achtergrondkleur;
+    }
+  }
+  .bewegendemuziek {
+    display: block;
+
+    i:first-child{
+      height: auto;
+      width: 50px;
+      font-size: 50px;
+      animation-name: BewegendeMuziek;
+      animation-duration: 10s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-play-state: running;
+    }
+
+    i:nth-child(2){
+      float: right;
+      font-size: 50px;
+      cursor: pointer;
+    }
   }
 }
 

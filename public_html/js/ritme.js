@@ -3,29 +3,8 @@ $(window).resize($(function () {
         $('article section').each(function () {
             $(this).find('img, p').addClass('hide');
             $(this).css('cursor', 'pointer');
+            $(this).addClass('clickable');
         });
-        /* Test 1
-        $('article section').hover(function () {
-            $(this).find('img, p').removeClass('hide');
-            tmp = $(this).attr('class');
-            $(this).removeAttr('class').attr('class', 'col-12');
-        }, function () {
-            $(this).find('img, p').addClass('hide');
-            $(this).removeAttr('class').attr('class', tmp);
-        })
-        */
-        /* Test 2
-        $('article section').click(function () {
-            if ($(this).attr('id') != 'clicked') {
-                $(this).find('img, p').removeClass('hide');
-                tmp = $(this).attr('class');
-                $(this).removeAttr('class').attr('class', 'col-12').attr('id', 'clicked');
-            } else {
-                $(this).find('img, p').addClass('hide');
-                $(this).removeAttr('class').attr('class', tmp).removeAttr('id');
-            }
-        });
-        */
 
         // Test 3
         $('article section').click(function () {
@@ -36,8 +15,8 @@ $(window).resize($(function () {
                     break;
                 default:
                     $('#clone').remove();
-                    $('#clicked').find('h3').removeClass('hide').end().removeAttr('id');
-                    $(this).attr('id', 'clicked');
+                    $('#clicked').find('h3').removeClass('hide').end().removeAttr('id').css('cursor', 'pointer').addClass('clickable');
+                    $(this).attr('id', 'clicked').removeClass('clickable').css('cursor', 'auto');
                     $(this).clone().removeAttr('class').addClass('col-12').attr('id', 'clone').find('img, p').removeClass('hide').end().insertBefore('article:first');
                     $(this).find('h3').addClass('hide');
                     $('html, body').scrollTop(0);

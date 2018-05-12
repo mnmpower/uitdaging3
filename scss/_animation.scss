@@ -26,3 +26,30 @@
     background-image: url(../images/octaaf.jpg);
   }
 }
+
+@keyframes BewegendeMuziek {
+  0%{
+    color: #000;
+    transform: translate(0px) rotate(-10deg);
+  }
+  17%{
+    transform: translate(66px) rotate(10deg);
+  }
+  33%{
+    transform: translate(133px) rotate(-10deg);
+  }
+  50%{
+    transform: translate(200px) rotate(10deg);
+    color: #aaa;
+  }
+  67%{
+    transform: translate(266px) rotate(-10deg);
+  }
+  83%{
+    transform: translate(333px) rotate(10deg);
+  }
+  100%{
+    color: #000;
+    transform: translate(400px) rotate(-10deg);
+  }
+}
