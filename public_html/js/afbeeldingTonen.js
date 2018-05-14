@@ -1,10 +1,10 @@
 $(function () {
-    $('i').not(':first-of-type').addClass('hide');
+    $('section i').not(':first-of-type').addClass('hide');
 });
 
 $(function () {
     // script hier
-    $('i:nth-of-type(2)').click(function () {
+    $('section i:nth-of-type(2)').click(function () {
         $(this).addClass('hide');
         $('img').removeClass('hide');
         $('#gif').addClass('gif');
@@ -13,7 +13,7 @@ $(function () {
 });
 
 $(function () {
-    $('i:first-of-type').click(function () {
+    $(' section i:first-of-type').click(function () {
         $(this).addClass('hide');
         $('img').addClass('hide');
         $('#gif').removeClass('gif');
