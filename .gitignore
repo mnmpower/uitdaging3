@@ -3,3 +3,6 @@
 /public_html/css
 
 package-lock.json
+*.docx
+*.tmp
+*.zip
