@@ -9,7 +9,7 @@ $(window).on('resize load', function () {
         });
 
         // Test 3
-        $('article section').click(function () {
+        $('article section').on('click', function () {
             switch ($(this).attr('id')) {
                 case 'clone':
                     break;
@@ -39,5 +39,6 @@ $(window).on('resize load', function () {
             $('#clone').remove();
             $('#clicked').find('h3').removeClass('hide').end().removeAttr('id').css('cursor', 'auto').removeClass('clickable');
         });
+        $('article section').off('click')
     }
 });
